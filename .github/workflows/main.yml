@@ -25,6 +25,7 @@ jobs:
           cache: gradle
       - name: Build APK
         run: |
+         cd java
          gradle wrapper
          bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
